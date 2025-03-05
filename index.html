@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style type="text/css">
+        *{margin:0;padding:0;box-sizing: border-box;font-family: sans-serif;}
+        body{
+           background: #081b29;
+           color: white;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background:transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo{
+            font-size: 30px;
+            color: azure;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .navbar a{
+            font-size:18px;
+            font-family:cursive;
+            color: azure;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 35px;
+            transition: 0.5s;
+        }
+        .navbar  a:hover{
+            color: aqua;
+        }
+        .home{
+            display:flex;
+            align-items: center;
+            height: 100vh;
+            padding: 0 10%;
+        }
+        .home-content{
+            max-width: 600px;
+
+        }
+        .home-content h1{
+            height: 6vh;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .home-content h3{
+            height: 5vh;
+            font-size: 32px;
+            font-weight: 700;
+            color: aqua;
+        }
+        .home-content p{
+            height: 6vh;
+            font-size: 16px;
+            margin: 20px 0 40px;
+        }
+        .home-content .btn-box{
+            display: flex;
+            justify-content: space-between;
+            width: 345px;
+            height: 50px;
+
+        }
+        .btn-box a{
+            
+            display: inline-flex;
+            width: 150px;
+            height:100%;
+            background: aqua;
+            border:2px solid aqua;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 19px;
+            color: black;
+            font-weight: 600;
+            letter-spacing: 1px;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+        .btn-box a:hover{
+            color: aqua;
+            background: transparent;
+        }
+        .btn-box a:nth-child(2){
+            background: transparent;
+            color: aqua;
+            transition: .5s;
+
+        }
+        .btn-box a:nth-child(2):hover{
+            background: aqua;
+            color: #081b29;
+        }
+        .home-sci{
+            position: absolute;
+            bottom: 40px;
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .home-sci a{
+            display: inline-flex;
+            justify-content:center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background:transparent ;
+            border: 2px solid aqua;
+            border-radius: 50%;
+            font-size: 20px;
+            color: aqua;
+            text-decoration: none;
+            transition: .5s;
+        
+        }
+        .home-sci a:hover{
+            background: aqua;
+            color:transparent;
+        }
+        .follow{
+            display:flex;
+            position: absolute;
+        }
+        .resume a{
+        
+            top: 0;
+            left: 0;
+            margin: 35px 0 35px;
+            display:flex;
+            width: 300px;
+            height:100%;
+            background: aqua;
+            border:2px solid aqua;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            font-weight: 600;
+            letter-spacing: 1px;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            padding:10px 20px;
+        }
+        .resume a:hover{
+            background: transparent;
+            border:5px solid aqua;
+            color:aqua;
+        }
+        .home .home-img{
+            position: absolute;
+            top:50%;
+            right: 0;
+           transform: translateY(-50%);
+            width:50%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .home-img img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+            border-radius: 50%;
+            padding: 50px 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="skill.html" target="_blank">Skills</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Sagar Dewanjee</h1>
+            <h3>Web Developer</h3>
+            <p>As a web developer,my ability to craft digital experiences and bring ideas to life through code is truly commendable and greatly appreciated.</p>
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">Lets Talk</a>
+            
+            </div>
+            <div class="resume">
+            <a href="resume.html" target="_blank">Click For Resume</a>
+        </div>
+        </div>
+        
+           <div class="home-sci">
+            
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+             
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+           
+           
+        </div>
+        <div class="home-img">
+        <img src="me.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
